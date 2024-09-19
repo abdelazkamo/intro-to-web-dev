@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-nous</title>
+  </head>
+  <body>
+    <h1>Contactez-nous pour plus de recettes !</h1>
+
+    <p>
+      Nous serions ravis de recevoir vos questions, suggestions ou nouvelles
+      recettes.
+    </p>
+
+    <!-- Image représentant la cuisine -->
+    <img
+      src="http://pets-images.dev-apis.com/pets/dog27.jpg"
+      alt="Cuisine"
+      width="600"
+      height="300"
+    />
+
+    <h2>Formulaire de contact</h2>
+
+    <!-- Formulaire de contact -->
+    <form action="/submit" method="POST">
+      <label for="nom">Nom :</label>
+      <input
+        type="text"
+        id="nom"
+        name="nom"
+        placeholder="Votre nom"
+        required
+      /><br /><br />
+
+      <label for="email">E-mail :</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Votre e-mail"
+        required
+      /><br /><br />
+
+      <label for="message">Message :</label><br />
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        cols="40"
+        placeholder="Votre message"
+      ></textarea
+      ><br /><br />
+
+      <label for="recette">Envoyez-vous une recette ?</label>
+      <input type="checkbox" id="recette" name="recette" value="oui" />
+      Oui<br /><br />
+
+      <label for="type">Type de cuisine préféré :</label>
+      <select id="type" name="type">
+        <option value="francaise">Cuisine Française</option>
+        <option value="italienne">Cuisine Italienne</option>
+        <option value="mexicaine">Cuisine Mexicaine</option>
+        <option value="asiatique">Cuisine Asiatique</option></select
+      ><br /><br />
+
+      <!-- Bouton de soumission -->
+      <button type="submit">Envoyer</button>
+      <!-- Bouton de réinitialisation -->
+      <button type="reset">Réinitialiser</button>
+    </form>
+
+    <h2>Inscription à la newsletter</h2>
+    <p>Recevez nos meilleures recettes par e-mail :</p>
+
+    <!-- Bouton d'abonnement -->
+    <button onclick="alert('Merci de vous être abonné !')">S'abonner</button>
+  </body>
+</html>
