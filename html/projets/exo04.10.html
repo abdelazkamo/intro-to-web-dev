@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roger...</title>
+  </head>
+  <body>
+    <h1>Dresseur de pokemon</h1>
+    <p>Les champs marques d'une * sont obligatiore</p>
+    <form>
+      <fieldset>
+        <legend>Nouveau dresseur</legend>
+        <div>
+          <label for="nom">Nom *</label>
+          <br />
+          <input type="text" name="nom" required />
+        </div>
+        <br />
+        <div>
+          <label for="nom">Description</label>
+          <br />
+          <textarea type="text" name="description" rows="5"></textarea>
+        </div>
+        <br />
+        <div>
+          <label for="equipe">Equipe</label>
+          <br />
+          <input type="radio" name="rouge" /><label for="rouge">Rouge</label
+          ><br />
+          <input type="radio" name="jaune" /><label for="jaune">Jaune</label
+          ><br />
+          <input type="radio" name="vert" /><label for="vert">Vert</label>
+        </div>
+        <br />
+        <div>
+          <label for="anniv">Anniversaire *</label>
+          <br />
+          <input type="date" name="anniv" required />
+        </div>
+        <br />
+        <input type="submit" value="Envoyer" />
+      </fieldset>
+    </form>
+  </body>
+</html>
